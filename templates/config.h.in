@@ -1,0 +1,34 @@
+#ifndef CONFIGURE_H_INCLUDED
+#define CONFIGURE_H_INCLUDED
+
+/* ${EXPLANATION_NUMBER_COLS} */
+const int cNumMarkerCols = ${MARKER_NUMBER_COLS};
+
+/* ${EXPLANATION_NUMBER_ROWS} */
+const int cNumMarkerRows = ${MARKER_NUMBER_ROWS};
+
+/* ${EXPLANATION_GAP_LENGTH} */
+const float cMarkerGap = ${MARKER_GAP_LENGTH}f; // in cm
+
+/* ${EXPLANATION_CIRCLE_SIZE} */
+const float cSizeCircle = ${MARKER_CIRCLE_SIZE}f; // in cm
+
+/* ${EXPLANATION_OFFSET} */
+const float cOffset = ${MARKER_OFFSET}f; // in cm
+
+/* name of powerpoint slide file name */
+#define DEFAULT_XML_FILENAME "${OUTPUT_XML_FILENAME}"
+
+/* name of thumbnail file */
+#define THUMBNAIL_FILENAME "${OUTPUT_THUMBNAIL_FILENAME}"
+
+enum markerType
+{
+    ${MARKER_TYPE_CHESSBOARD},
+    ${MARKER_TYPE_SYMMETRICAL},
+    ${MARKER_TYPE_ASYMMETRICAL},
+};
+
+const enum markerType cMarkerType = ${MARKER_TYPES};
+
+#endif // CONFIGURE_H_INCLUDED
